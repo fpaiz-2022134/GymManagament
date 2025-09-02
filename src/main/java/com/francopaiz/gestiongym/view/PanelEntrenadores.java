@@ -69,13 +69,16 @@ public class PanelEntrenadores extends javax.swing.JPanel {
     public void actualizarTablaEntrenadores(ArrayList<Entrenador> entrenadores) {
         modeloTabla.setRowCount(0);
         for (Entrenador entrenador : entrenadores) {
+            System.out.println(entrenador.getCantidadMiembros());
             modeloTabla.addRow(new Object[]{
                 entrenador.getId(),
                 entrenador.getNombre(),
                 entrenador.getEspecialidad(),
                 entrenador.getCantidadMiembros()
+                
             });
         }
+        
     }
 
     public void limpiarFormulario() {

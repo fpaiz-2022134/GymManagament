@@ -11,6 +11,8 @@ import javax.swing.UIManager;
 /**
  *
  * @author Franco Paiz
+ * 
+ * Github PROJECT: https://github.com/fpaiz-2022134/GymManagament.git
  */
 public class GestionGym {
 

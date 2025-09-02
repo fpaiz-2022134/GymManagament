@@ -29,7 +29,7 @@ public class Entrenador {
     //Managing members
     
     public void asignarMiembro(Miembro miembro){
-        if(miembrosAsignados.contains(miembro)){
+        if(!miembrosAsignados.contains(miembro)){
             miembrosAsignados.add(miembro);
         }
     }
