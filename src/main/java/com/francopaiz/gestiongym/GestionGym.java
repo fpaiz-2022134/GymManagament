@@ -5,13 +5,24 @@
 
 package com.francopaiz.gestiongym;
 
+import com.francopaiz.gestiongym.controller.ControladorPrincipal;
+import javax.swing.UIManager;
+
 /**
  *
- * @author Dell
+ * @author Franco Paiz
  */
 public class GestionGym {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        try {
+            UIManager.setLookAndFeel(UIManager.getLookAndFeel());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+        // Starting the app
+        ControladorPrincipal controlador = new ControladorPrincipal();
+        controlador.iniciarAplicacion();
     }
 }
